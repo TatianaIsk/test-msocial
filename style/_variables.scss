@@ -1,0 +1,11 @@
+// colors
+$color-yellow: #ffcd00;
+$color-brown: #5a1404;
+$color-red: #e63000;
+$color-black: #000;
+
+// fonts
+@font-face {
+  font-family: 'FontDin';
+  src: local('FontDin'), url('./fonts/pfdintextcondpro-medium.woff'), format('woff');
+}
