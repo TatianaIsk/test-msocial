@@ -1,0 +1,17 @@
+@import './../../../../style/_variables.scss';
+
+.wrapper {
+  background: linear-gradient(180deg, $color-yellow-dark 0%, $color-yellow 78.83%);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.button {
+  position: absolute;
+  top: 780px;
+  left: 670px;
+  background-color: $color-red;
+  color: $color-white;
+  border: 6px solid $color-white;
+}

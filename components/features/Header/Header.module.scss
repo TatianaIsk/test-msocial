@@ -16,10 +16,19 @@
 .button {
   background-color: $color-yellow;
   margin-left: 20px;
+  color: $color-brown;
 
   &:hover {
     background-color: $color-black;
     color: $color-yellow;
     transition: 1s;
+  }
+}
+
+.buttonReg {
+  color: $color-brown;
+
+  &:hover {
+    color: $color-red;
   }
 }

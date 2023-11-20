@@ -1,0 +1,16 @@
+@import './../../../style/_variables.scss';
+
+.wrapper {
+  background-color: $color-yellow;
+  border-radius: 0 0 35% 40%;
+}
+
+.dwarf {
+  position: absolute;
+  top: 120px;
+  left: 300px;
+}
+
+.image {
+  border-radius: 0 0 20% 50%;
+}
