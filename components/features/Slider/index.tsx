@@ -1,8 +1,12 @@
 'use client';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+import { Navigation, Pagination } from 'swiper/modules';
 import { ImageVariants } from '@/components/ui/Image';
+
+import 'swiper/scss';
+import 'swiper/scss/navigation';
+import 'swiper/scss/pagination';
 
 import SliderSlide from './SliderSlide';
 
@@ -31,9 +35,22 @@ const slides: SlideType[] = [
 ];
 
 const Slider = () => (
-  <Swiper spaceBetween={50} slidesPerView={3} onSlideChange={() => console.log('slide change')} onSwiper={swiper => console.log(swiper)}>
+  <Swiper
+    modules={[Navigation, Pagination]}
+    spaceBetween={50}
+    slidesPerView={4}
+    slidesPerGroup={4}
+    loop={true}
+    navigation
+    pagination={{ clickable: true }}
+    scrollbar={{ draggable: true }}
+    onSwiper={swiper => console.log(swiper)}
+    onSlideChange={() => console.log('slide change')}
+  >
     {slides.map(slide => (
-      <SliderSlide key={slide.image} {...slide} />
+      <SwiperSlide key={slide.image} className='items-center'>
+        <SliderSlide key={slide.image} {...slide} />
+      </SwiperSlide>
     ))}
   </Swiper>
 );
