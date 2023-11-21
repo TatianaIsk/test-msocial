@@ -1,0 +1,29 @@
+.image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &.cheese1 {
+    width: 198px;
+    height: 305px;
+    background-image: url('~/assets/slider/cheese1.svg');
+  }
+
+  &.cheese2 {
+    width: 179px;
+    height: 277px;
+    background-image: url('~/assets/slider/cheese2.svg');
+  }
+
+  &.cheese3 {
+    width: 198px;
+    height: 305px;
+    background-image: url('~/assets/slider/cheese3.svg');
+  }
+
+  &.cheese4 {
+    width: 179px;
+    height: 276px;
+    background-image: url('~/assets/slider/cheese4.svg');
+  }
+}

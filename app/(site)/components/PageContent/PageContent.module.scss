@@ -2,16 +2,35 @@
 
 .wrapper {
   background: linear-gradient(180deg, $color-yellow-dark 0%, $color-yellow 78.83%);
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .button {
+    position: absolute;
+    top: 780px;
+    left: 670px;
+    background-color: $color-red;
+    color: $color-white;
+    border: 6px solid $color-white;
+    box-shadow: 0px 2px 10px $color-white;
+  }
+
+  .title {
+    font-size: 58px;
+    margin-top: 85px;
+    text-align: center;
+    color: $color-red;
+    text-shadow: 4px 4px 0 $color-white;
+    text-transform: uppercase;
+  }
 }
 
-.button {
-  position: absolute;
-  top: 780px;
-  left: 670px;
-  background-color: $color-red;
-  color: $color-white;
-  border: 6px solid $color-white;
+.subtitle {
+  font-size: 36px;
+  text-transform: uppercase;
+  color: $color-brown;
+  text-align: center;
+  margin-top: 65px;
+  margin-bottom: 30px;
 }

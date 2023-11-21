@@ -1,0 +1,49 @@
+.icon {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &.cart {
+    width: 45px;
+    height: 45px;
+    background-image: url('~/assets/icons/cart.svg');
+    margin-bottom: 22px;
+  }
+
+  &.notebook {
+    width: 70px;
+    height: 45px;
+    background-image: url('~/assets/icons/notebook.svg');
+    margin-bottom: 22px;
+  }
+
+  &.phone {
+    width: 30px;
+    height: 45px;
+    background-image: url('~/assets/icons/phone.svg');
+    margin-bottom: 22px;
+  }
+
+  &.prize {
+    width: 42px;
+    height: 45px;
+    background-image: url('~/assets/icons/prize.svg');
+    margin-bottom: 22px;
+  }
+
+  &.coupon {
+    width: 70px;
+    height: 45px;
+    background-image: url('~/assets/icons/coupon.svg');
+    margin-bottom: 22px;
+  }
+
+  &.arrow {
+    width: 23px;
+    height: 46px;
+    background-image: url('~/assets/icons/arrow.svg');
+    margin-top: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
