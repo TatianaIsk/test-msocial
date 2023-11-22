@@ -1,11 +1,12 @@
+@import './../../../style/_variables.scss';
+
 .image {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  @include background-style;
+  margin-bottom: 20px;
 
   &.cheese1 {
-    width: 198px;
-    height: 305px;
+    width: 168px;
+    height: 275px;
     background-image: url('~/assets/slider/cheese1.svg');
   }
 
@@ -16,8 +17,8 @@
   }
 
   &.cheese3 {
-    width: 198px;
-    height: 305px;
+    width: 168px;
+    height: 285px;
     background-image: url('~/assets/slider/cheese3.svg');
   }
 

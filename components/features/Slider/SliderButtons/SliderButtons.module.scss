@@ -1,0 +1,26 @@
+@import './../../../../style/_variables.scss';
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.buttonPrev {
+  @include background-style;
+  background-image: url('~/assets/slider/slider-button/slider-button-prev.svg');
+  width: 20px;
+  height: 30px;
+  position: absolute;
+  bottom: 220px;
+}
+
+.buttonNext {
+  @include background-style;
+  background-image: url('~/assets/slider/slider-button/slider-button-next.svg');
+  width: 20px;
+  height: 30px;
+  position: absolute;
+  bottom: 220px;
+}

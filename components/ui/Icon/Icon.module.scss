@@ -1,7 +1,7 @@
+@import './../../../style/_variables.scss';
+
 .icon {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  @include background-style;
 
   &.cart {
     width: 45px;

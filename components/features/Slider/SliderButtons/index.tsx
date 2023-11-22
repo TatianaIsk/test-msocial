@@ -1,11 +1,19 @@
-import s from './SliderButtons.module.scss'
+import s from './SliderButtons.module.scss';
 
-interface SliderButtons {
-	
+interface SliderButtonsProps {
+  onPrevClick: () => void;
+  onNextClick: () => void;
 }
 
-const SliderButtons = () => {
-  return <div>index</div>;
-};
+const SliderButtons: React.FC<SliderButtonsProps> = ({ onPrevClick, onNextClick }) => (
+  <div className={s.wrapper}>
+    <button onClick={onPrevClick}>
+      <div className={s.buttonPrev} />
+    </button>
+    <button onClick={onNextClick}>
+      <div className={s.buttonNext} />
+    </button>
+  </div>
+);
 
 export default SliderButtons;

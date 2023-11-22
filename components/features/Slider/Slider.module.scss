@@ -1,0 +1,28 @@
+@import './../../../style/_variables.scss';
+
+.slider {
+  align-items: center;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.swiperBullet {
+  display: flex;
+  flex-direction: row;
+  width: 10px;
+  height: 10px;
+  background: $color-brown;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-left: 5px;
+
+  &.swiperBulletActive {
+    border: 1px solid $color-brown;
+    background: $color-white;
+  }
+}

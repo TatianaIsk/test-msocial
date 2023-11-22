@@ -1,6 +1,6 @@
 // colors
 $color-yellow: #ffcd00;
-$color-yellow-dark: #ECB200;
+$color-yellow-dark: #ecb200;
 $color-brown: #5a1404;
 $color-red: #e63000;
 $color-black: #000;
@@ -10,4 +10,12 @@ $color-white: #fff;
 @font-face {
   font-family: 'FontDin';
   src: local('FontDin'), url('./fonts/pfdintextcondpro-medium.woff'), format('woff');
+}
+
+// mixins
+
+@mixin background-style {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }

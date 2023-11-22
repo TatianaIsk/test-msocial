@@ -17,7 +17,7 @@ const PageContent = () => {
         </div>
       </div>
       <h4 className={s.subtitle}>в акции участвуют</h4>
-      <div className='px-[100px]'>
+      <div className={s.slider}>
         <Slider />
       </div>
     </>
