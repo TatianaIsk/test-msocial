@@ -5,6 +5,7 @@ $color-brown: #5a1404;
 $color-red: #e63000;
 $color-black: #000;
 $color-white: #fff;
+$color-grey: #ededed;
 
 // fonts
 @font-face {
@@ -13,7 +14,6 @@ $color-white: #fff;
 }
 
 // mixins
-
 @mixin background-style {
   background-size: cover;
   background-repeat: no-repeat;
