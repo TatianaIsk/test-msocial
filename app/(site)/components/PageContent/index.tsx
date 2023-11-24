@@ -17,40 +17,38 @@ import vectorWhite from '@/assets/vectors/vector-white.svg';
 
 import s from './PageContent.module.scss';
 
-const PageContent = () => {
-  return (
-    <div className={s.container}>
-      <div className={s.wrapper}>
-        <Banner />
-        <Button className={s.button}>Загрузить чек</Button>
-        <h3 className={s.title}>Нам 40 лет — вам подарки</h3>
-        <div className='flex justify-center'>
-          <Image src={baloon} alt='baloon' className={s.vertorBaloon} />
-          <Image src={vectorWhite} alt='vectorWhite' className={s.vectorWhite} />
-          <OptionsMenu />
-          <Image src={vectorBrown} alt='vectorBrown' className={s.vectorBrown} />
-        </div>
-      </div>
-      <div className={s.sliderBlock}>
-        <h4 className={s.subtitle}>в акции участвуют</h4>
-      </div>
-      <div className={s.slider}>
-        <Slider>
-          {slides.map(slide => (
-            <SwiperSlide key={slide.image}>
-              <div className='flex flex-col items-center'>
-                <Image src={slide.image} alt='image' />
-                <p className={s.text}>{slide.text}</p>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Slider>
-      </div>
-      <div className={s.prizeBlock}>
-        <PrizeBlock />
+const PageContent = () => (
+  <div className={s.container}>
+    <div className={s.wrapper}>
+      <Banner />
+      <Button className={s.button}>Загрузить чек</Button>
+      <h3 className={s.title}>Нам 40 лет — вам подарки</h3>
+      <div className='flex justify-center'>
+        <Image src={baloon} alt='baloon' className={s.vertorBaloon} />
+        <Image src={vectorWhite} alt='vectorWhite' className={s.vectorWhite} />
+        <OptionsMenu />
+        <Image src={vectorBrown} alt='vectorBrown' className={s.vectorBrown} />
       </div>
     </div>
-  );
-};
+    <div className={s.sliderBlock}>
+      <h4 className={s.subtitle}>в акции участвуют</h4>
+    </div>
+    <div className={s.slider}>
+      <Slider>
+        {slides.map(slide => (
+          <SwiperSlide key={slide.image}>
+            <div className='flex flex-col items-center'>
+              <Image src={slide.image} alt='image' />
+              <p className={s.text}>{slide.text}</p>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Slider>
+    </div>
+    <div className={s.prizeBlock}>
+      <PrizeBlock />
+    </div>
+  </div>
+);
 
 export default PageContent;
