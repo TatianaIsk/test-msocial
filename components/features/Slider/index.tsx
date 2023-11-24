@@ -32,7 +32,7 @@ const Slider: React.FC<SliderProps> = ({ children, classNames }) => {
     <div className='relative'>
       <Swiper
         modules={[Navigation, Pagination]}
-        spaceBetween={50}
+        spaceBetween={20}
         slidesPerView={4}
         loop
         pagination={{

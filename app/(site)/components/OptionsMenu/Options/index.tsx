@@ -1,5 +1,5 @@
 import Icon from '@/components/ui/Icon';
-import { OptionType } from '..';
+import { OptionType } from '../types';
 
 type OptionProps = OptionType;
 

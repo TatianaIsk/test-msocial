@@ -1,0 +1,50 @@
+@import '@/style/_variables.scss';
+
+.wrapper {
+  background-color: $color-white;
+  padding: 22px 134px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+	.info {
+		font-size: 16px;
+		color: $color-brown;
+		text-transform: uppercase;
+	}
+
+	.number {
+		font-size: 36px;
+		color: $color-red;
+	}
+
+	.caption {
+		font-size: 12px;
+		color: $color-brown;
+	}
+
+	.link {
+		font-size: 16px;
+		margin: 0 35px;
+		font-weight: 500; 
+		color: $color-brown;
+	}
+
+	.join {
+		font-size: 16px;
+		color: $color-brown;
+		font-weight: 300;
+	}
+
+	.icon {
+		display: flex;
+		align-content: center;
+		justify-content: center;
+		background-color: $color-yellow;
+		width: 32px;
+		height: 32px;
+		border-radius: 5px;
+		margin-right: 10px;
+		cursor: pointer;
+	}
+}

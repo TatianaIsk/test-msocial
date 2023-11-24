@@ -10,6 +10,7 @@ import Button from '@/components/ui/Button';
 import OptionsMenu from '../OptionsMenu';
 import Slider from '@/components/features/Slider';
 import PrizeBlock from '../PrizeBlock';
+import Footer from '@/components/features/Footer';
 
 import baloon from '@/assets/vectors/baloon.svg';
 import vectorBrown from '@/assets/vectors/vector-brown.svg';
@@ -48,6 +49,7 @@ const PageContent = () => (
     <div className={s.prizeBlock}>
       <PrizeBlock />
     </div>
+    <Footer />
   </div>
 );
 
