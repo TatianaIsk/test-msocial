@@ -8,19 +8,46 @@ import redFrame from '@/assets/prize/redFrame.svg';
 import whiteFrame from '@/assets/prize/whiteFrame.svg';
 import PrizeWrapperContent from './PrizeWrapperContent';
 
+import baloon from '@/assets/prize/vectors/baloon.svg';
+import star from '@/assets/prize/vectors/star.svg';
+import vector1 from '@/assets/prize/vectors/vector-1.svg';
+import vector2 from '@/assets/prize/vectors/vector-2.svg';
+import vector3 from '@/assets/prize/vectors/vector-3.svg';
+import vector4 from '@/assets/prize/vectors/vector-4.svg';
+import vector5 from '@/assets/prize/vectors/vector-5.svg';
+import vector6 from '@/assets/prize/vectors/vector-6.svg';
+import vector7 from '@/assets/prize/vectors/vector-7.svg';
+import Button from '@/components/ui/Button';
+
 const PrizeBlock = () => (
-  <div className={clsx('w-[965px] h-[375px] px-[50px]', s.wrapper)}>
-    <Image src={bow} alt='bow' className={s.imageBow} />
-    <div className={s.redFrame}>
-      <Image src={redFrame} alt='redFrame' sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw' />
+  <>
+    <div className={clsx('w-[965px] h-[375px] px-[50px]', s.wrapper)}>
+      <Image src={bow} alt='bow' className={s.imageBow} />
+      <div className={s.redFrame}>
+        <Image src={redFrame} alt='redFrame' sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw' />
+      </div>
+      <div className={s.whiteFrame}>
+        <Image src={whiteFrame} alt='whiteFrame' sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw' />
+      </div>
+      <h3 className={s.title}>призы</h3>
+      <div className={s.wrapperContent}>
+        <PrizeWrapperContent />
+      </div>
     </div>
-    <div className={s.whiteFrame}>
-      <Image src={whiteFrame} alt='whiteFrame' sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw' />
+    <Image src={baloon} alt='baloon' className={s.baloon} />
+    <Image src={star} alt='star' className={s.star} />
+    <Image src={vector1} alt='vector1' className={s.vector1} />
+    <Image src={vector2} alt='vector2' className={s.vector2} />
+    <Image src={vector3} alt='vector3' className={s.vector3} />
+    <Image src={vector4} alt='vector4' className={s.vector4} />
+    <Image src={vector5} alt='vector5' className={s.vector5} />
+    <Image src={vector6} alt='vector6' className={s.vector6} />
+    <Image src={vector7} alt='vector7' className={s.vector7} />
+    <h3 className={s.subtitle}>Где купить</h3>
+    <div className={s.buttons}>
+      <Button className={s.btnOffline}>Оффлайн</Button>
+      <Button className={s.btnOnline}>Онлайн</Button>
     </div>
-    <h3 className={s.title}>призы</h3>
-    <div className={s.wrapperContent}>
-      <PrizeWrapperContent />
-    </div>
-  </div>
+  </>
 );
 export default PrizeBlock;

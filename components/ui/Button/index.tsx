@@ -6,7 +6,7 @@ interface ButtonProps extends PropsWithChildren<ComponentPropsWithRef<'button'>>
 }
 
 const Button: React.FC<ButtonProps> = ({ className, children, ...props }) => (
-  <button className={clsx('px-[40px] py-[10px] text-[18px] uppercase rounded-[20px]', className)} {...props}>
+  <button className={clsx('rounded-[20px]', className)} {...props}>
     {children}
   </button>
 );

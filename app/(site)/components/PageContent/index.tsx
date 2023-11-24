@@ -3,8 +3,10 @@ import Image from 'next/image';
 import Banner from '@/components/features/Banner';
 import Button from '@/components/ui/Button';
 import OptionsMenu from '../OptionsMenu';
-import Slider from '../../../../components/features/Slider';
+import Slider from '@/components/features/Slider';
 import PrizeBlock from '../PrizeBlock';
+
+import { slidesCheese } from '@/components/features/Slider/data/slides';
 
 import s from './PageContent.module.scss';
 
@@ -30,7 +32,7 @@ const PageContent = () => {
         <h4 className={s.subtitle}>в акции участвуют</h4>
       </div>
       <div className={s.slider}>
-        <Slider />
+        <Slider slides={slidesCheese} />
       </div>
       <div className={s.prizeBlock}>
         <PrizeBlock />

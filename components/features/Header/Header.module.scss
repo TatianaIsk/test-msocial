@@ -17,6 +17,9 @@
   background-color: $color-yellow;
   margin-left: 20px;
   color: $color-brown;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 10px 40px;
 
   &:hover {
     background-color: $color-black;
@@ -27,6 +30,9 @@
 
 .buttonReg {
   color: $color-brown;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 10px 40px;
 
   &:hover {
     color: $color-red;

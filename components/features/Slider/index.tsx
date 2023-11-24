@@ -4,7 +4,8 @@ import { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import type { Swiper as SwiperType } from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
-import { ImageVariants } from '@/components/ui/Image';
+
+import { SlideType } from './types';
 
 import 'swiper/scss';
 import 'swiper/scss/navigation';
@@ -12,38 +13,10 @@ import 'swiper/scss/pagination';
 
 import s from './Slider.module.scss';
 
-import SliderSlide from './SliderSlide';
 import SliderButtons from './SliderButtons';
+import Image from 'next/image';
 
-export type SlideType = {
-  image: ImageVariants;
-  text: string;
-};
-
-const slides: SlideType[] = [
-  {
-    image: 'cheese1',
-    text: 'Лёгкий, брусок 180 г',
-  },
-  {
-    image: 'cheese2',
-    text: 'Лёгкий, слайсы 120, 225 г',
-  },
-  {
-    image: 'cheese3',
-    text: 'Сливочный, брусок 200, 300 г',
-  },
-  {
-    image: 'cheese4',
-    text: 'Сливочный, слайсы 130, 250 г',
-  },
-  {
-    image: 'cheese3',
-    text: 'Сливочный, брусок 200, 300 г',
-  },
-];
-
-const Slider = () => {
+const Slider = ({ slides }: { slides: SlideType[] }) => {
   const slideRef = useRef<SwiperType>();
 
   const handlePrev = () => slideRef.current?.slidePrev();
@@ -65,8 +38,11 @@ const Slider = () => {
         className={s.slider}
       >
         {slides.map(slide => (
-          <SwiperSlide key={slide.image} className={s.slide}>
-            <SliderSlide key={slide.image} {...slide} />
+          <SwiperSlide key={slide.image}>
+            <div className='flex flex-col items-center'>
+              <Image src={slide.image} alt='image' />
+              <p className={s.text}>{slide.text}</p>
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>

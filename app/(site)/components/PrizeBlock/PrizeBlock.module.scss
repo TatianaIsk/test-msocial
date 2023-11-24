@@ -3,7 +3,7 @@
 .wrapper {
   background-color: $color-yellow;
   position: absolute;
-  top: 2045px;
+  top: 2080px;
   left: 285px;
 }
 
@@ -40,4 +40,98 @@
   font-size: 36px;
   text-transform: uppercase;
   color: $color-white;
+}
+
+.baloon {
+  position: absolute;
+  top: 2160px;
+  right: 120px;
+}
+
+.star {
+  position: absolute;
+  right: 610px;
+  top: 2220px;
+}
+
+.vector1 {
+  position: absolute;
+  right: 230px;
+  top: 2300px;
+}
+
+.vector2 {
+  position: absolute;
+  left: 600px;
+  top: 2220px;
+}
+
+.vector3 {
+  position: absolute;
+  left: 460px;
+  top: 2100px;
+}
+
+.vector4 {
+  position: absolute;
+  left: 320px;
+  top: 2120px;
+}
+
+.vector5 {
+  position: absolute;
+  left: 260px;
+  top: 2400px;
+}
+
+.vector6 {
+  position: absolute;
+  left: 180px;
+  top: 2300px;
+}
+
+.vector7 {
+  position: absolute;
+  left: 120px;
+  top: 2200px;
+}
+
+.subtitle {
+  text-align: center;
+  margin-top: 335px;
+  color: $color-brown;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 15px;
+  color: $color-brown;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+
+  .btnOffline {
+    background-color: $color-yellow-dark;
+    padding: 3px 20px;
+    margin-right: 10px;
+
+    &:hover {
+      background-color: $color-yellow;
+      transition: 1s;
+    }
+  }
+
+  .btnOnline {
+    padding: 3px 20px;
+    margin-left: 10px;
+
+    &:hover {
+      background-color: $color-yellow-dark;
+      transition: 1s;
+    }
+  }
 }

@@ -1,12 +1,13 @@
 import { PropsWithChildren } from 'react';
 
 import Image from 'next/image';
+import Link from 'next/link';
 
 import clsx from 'clsx';
+
 import s from './Header.module.scss';
 
-import logo from './../../../assets/logo.svg';
-import Link from 'next/link';
+import logo from '@/assets/logo.svg';
 import Button from '@/components/ui/Button';
 
 interface HeaderProps extends PropsWithChildren {
