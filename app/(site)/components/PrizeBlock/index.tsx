@@ -1,6 +1,9 @@
 import clsx from 'clsx';
 import Image from 'next/image';
 
+import { slidesShop as slides } from '@/components/features/Slider/data/slides';
+import { SwiperSlide } from 'swiper/react';
+
 import s from './PrizeBlock.module.scss';
 
 import bow from '@/assets/prize/bow.svg';
@@ -18,6 +21,7 @@ import vector5 from '@/assets/prize/vectors/vector-5.svg';
 import vector6 from '@/assets/prize/vectors/vector-6.svg';
 import vector7 from '@/assets/prize/vectors/vector-7.svg';
 import Button from '@/components/ui/Button';
+import Slider from '@/components/features/Slider';
 
 const PrizeBlock = () => (
   <>
@@ -47,6 +51,17 @@ const PrizeBlock = () => (
     <div className={s.buttons}>
       <Button className={s.btnOffline}>Оффлайн</Button>
       <Button className={s.btnOnline}>Онлайн</Button>
+    </div>
+    <div className='relative px-[60px]'>
+      <Slider classNames={{ slider: s.slider, buttonPrev: s.buttonPrev, buttonNext: s.buttonNext }}>
+        {slides.map((slide, index) => (
+          <SwiperSlide key={index}>
+            <div className='flex flex-col items-center mt-[30px] mb-[60px]'>
+              <Image src={slide.image} alt='image' />
+            </div>
+          </SwiperSlide>
+        ))}
+      </Slider>
     </div>
   </>
 );

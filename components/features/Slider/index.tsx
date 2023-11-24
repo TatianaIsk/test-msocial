@@ -1,11 +1,9 @@
 'use client';
-import { useRef } from 'react';
+import { useRef, PropsWithChildren } from 'react';
 
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper } from 'swiper/react';
 import type { Swiper as SwiperType } from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
-
-import { SlideType } from './types';
 
 import 'swiper/scss';
 import 'swiper/scss/navigation';
@@ -14,9 +12,17 @@ import 'swiper/scss/pagination';
 import s from './Slider.module.scss';
 
 import SliderButtons from './SliderButtons';
-import Image from 'next/image';
+import clsx from 'clsx';
 
-const Slider = ({ slides }: { slides: SlideType[] }) => {
+interface SliderProps extends PropsWithChildren {
+  classNames?: {
+    buttonPrev?: string;
+    buttonNext?: string;
+    slider?: string;
+  };
+}
+
+const Slider: React.FC<SliderProps> = ({ children, classNames }) => {
   const slideRef = useRef<SwiperType>();
 
   const handlePrev = () => slideRef.current?.slidePrev();
@@ -29,24 +35,21 @@ const Slider = ({ slides }: { slides: SlideType[] }) => {
         spaceBetween={50}
         slidesPerView={4}
         loop
-        pagination={{ clickable: true, bulletClass: `${s.swiperBullet}`, bulletActiveClass: `${s.swiperBulletActive}` }}
+        pagination={{
+          clickable: true,
+          bulletClass: s.swiperBullet,
+          bulletActiveClass: s.swiperBulletActive,
+        }}
         scrollbar={{ draggable: true }}
         onSwiper={swiper => console.log(swiper)}
         onBeforeInit={(swiper: SwiperType) => {
           slideRef.current = swiper;
         }}
-        className={s.slider}
+        className={clsx(s.slider, classNames?.slider)}
       >
-        {slides.map(slide => (
-          <SwiperSlide key={slide.image}>
-            <div className='flex flex-col items-center'>
-              <Image src={slide.image} alt='image' />
-              <p className={s.text}>{slide.text}</p>
-            </div>
-          </SwiperSlide>
-        ))}
+        {children}
       </Swiper>
-      <SliderButtons onPrevClick={handlePrev} onNextClick={handleNext} />
+      <SliderButtons buttonPrev={classNames?.buttonPrev} buttonNext={classNames?.buttonNext} onPrevClick={handlePrev} onNextClick={handleNext} />
     </div>
   );
 };
