@@ -17,7 +17,7 @@ const Footer = () => (
       <p className={s.number}>8 800 333-15-25</p>
       <p className={s.caption}>© 2020 OOO «Валио»</p>
     </div>
-    <div className='flex flex-row'>
+    <div className={s.links}>
       <Link href='/connection' className={s.link}>
         Обратная связь
       </Link>
@@ -30,7 +30,7 @@ const Footer = () => (
     </div>
     <div className='flex flex-col'>
       <p className={s.join}>Присоединяйтесь к нам</p>
-      <div className='flex flex-row mt-[11px]'>
+      <div className={s.media}>
         <div className={s.icon}>
           <Image src={facebook} alt='facebook' />
         </div>

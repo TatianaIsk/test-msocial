@@ -7,44 +7,97 @@
   justify-content: space-between;
   align-items: flex-start;
 
-	.info {
-		font-size: 16px;
-		color: $color-brown;
-		text-transform: uppercase;
-	}
+  @media screen and (max-width: $mobile) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 260px;
+  }
 
-	.number {
-		font-size: 36px;
-		color: $color-red;
-	}
+  .info {
+    font-size: 16px;
+    color: $color-brown;
+    text-transform: uppercase;
 
-	.caption {
-		font-size: 12px;
-		color: $color-brown;
-	}
+    @media screen and (max-width: $mobile) {
+      position: absolute;
+      top: 5100px;
+      left: 310px;
+    }
+  }
 
-	.link {
-		font-size: 16px;
-		margin: 0 35px;
-		font-weight: 500; 
-		color: $color-brown;
-	}
+  .number {
+    font-size: 36px;
+    color: $color-red;
 
-	.join {
-		font-size: 16px;
-		color: $color-brown;
-		font-weight: 300;
-	}
+    @media screen and (max-width: $mobile) {
+      position: absolute;
+      top: 5130px;
+      left: 280px;
+    }
+  }
 
-	.icon {
+  .caption {
+    font-size: 12px;
+    color: $color-brown;
+
+    @media screen and (max-width: $mobile) {
+      position: absolute;
+      top: 5260px;
+      left: 350px;
+    }
+  }
+
+  .links {
+    display: flex;
+    flex-direction: row;
+
+    @media screen and (max-width: $mobile) {
+      position: absolute;
+      bottom: -4190px;
+    }
+
+    .link {
+      font-size: 16px;
+      margin: 0 35px;
+      font-weight: 500;
+      color: $color-brown;
+    }
+  }
+
+  .join {
+    font-size: 16px;
+    color: $color-brown;
+    font-weight: 300;
+
+    @media screen and (max-width: $mobile) {
+      position: absolute;
+			top: 5180px;
+			left: 320px;
+    }
+  }
+
+  .media {
 		display: flex;
-		align-content: center;
-		justify-content: center;
-		background-color: $color-yellow;
-		width: 32px;
-		height: 32px;
-		border-radius: 5px;
-		margin-right: 10px;
-		cursor: pointer;
-	}
+		flex-direction: row;
+		margin-top: 11px;
+
+    @media screen and (max-width: $mobile) {
+      position: absolute;
+			top: 5200px;
+			left: 275px;
+    }
+
+    .icon {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      background-color: $color-yellow;
+      width: 32px;
+      height: 32px;
+      border-radius: 5px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+  }
 }

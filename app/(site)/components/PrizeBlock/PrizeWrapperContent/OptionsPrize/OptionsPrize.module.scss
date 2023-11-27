@@ -1,9 +1,36 @@
 @import '@/style/_variables.scss';
 
-.text {
-  font-size: 18px;
-  color: $color-brown;
-	text-align: center;
-	font-weight: 400;
-  font-style: normal;
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 12px;
+  margin: 0 12px;
+
+  @media screen and (max-width: $mobile) {
+		margin: 0 12px;
+	}
+
+  .image {
+    margin-bottom: 24px;
+
+    @media screen and (max-width: $mobile) {
+      margin: 160px 12px 24px 12px;
+      width: 170px;
+    }
+  }
+
+  .text {
+    font-size: 18px;
+    color: $color-brown;
+    text-align: center;
+    font-weight: 400;
+    font-style: normal;
+
+    @media screen and (max-width: $mobile) {
+      font-size: 36px;
+    }
+  }
 }
+

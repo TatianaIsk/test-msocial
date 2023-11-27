@@ -1,4 +1,3 @@
-import clsx from 'clsx';
 import Image from 'next/image';
 
 import { slidesShop as slides } from '@/components/features/Slider/data/slides';
@@ -8,7 +7,9 @@ import s from './PrizeBlock.module.scss';
 
 import bow from '@/assets/prize/bow.svg';
 import redFrame from '@/assets/prize/redFrame.svg';
+import redFrameVert from '@/assets/prize/redFrameVert.svg';
 import whiteFrame from '@/assets/prize/whiteFrame.svg';
+import whiteFrameVert from '@/assets/prize/whiteFrameVert.svg';
 import PrizeWrapperContent from './PrizeWrapperContent';
 
 import baloon from '@/assets/prize/vectors/baloon.svg';
@@ -25,13 +26,13 @@ import Slider from '@/components/features/Slider';
 
 const PrizeBlock = () => (
   <>
-    <div className={clsx('w-[965px] h-[375px] px-[50px]', s.wrapper)}>
+    <div className={s.wrapper}>
       <Image src={bow} alt='bow' className={s.imageBow} />
       <div className={s.redFrame}>
-        <Image src={redFrame} alt='redFrame' sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw' />
+        <img srcSet={redFrame.src + ' 768w, ' + redFrameVert.src + ' 1200w'} alt='redFrame' sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw' className={s.imgRed} />
       </div>
       <div className={s.whiteFrame}>
-        <Image src={whiteFrame} alt='whiteFrame' sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw' />
+        <img srcSet={whiteFrame.src + ' 768w, ' + whiteFrameVert.src + ' 1200w'} alt='whiteFrame' sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw' className={s.imgWhite}/>
       </div>
       <h3 className={s.title}>призы</h3>
       <div className={s.wrapperContent}>

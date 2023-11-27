@@ -5,12 +5,37 @@
   position: absolute;
   top: 2080px;
   left: 285px;
+  width: 965px;
+  height: 375px;
+  padding-right: 50px;
+  padding-left: 50px;
+
+  @media screen and (max-width: $laptop) {
+    left: 245px;
+  }
+
+  @media screen and (max-width: $desktop) {
+    top: 2050px;
+    left: 155px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    top: 2830px;
+    left: 30px;
+    width: 700px;
+    height: 1680px;
+  }
 }
 
 .imageBow {
   position: absolute;
   bottom: 383px;
   left: 400px;
+
+  @media screen and (max-width: $mobile) {
+    left: 260px;
+    bottom: 1690px;
+  }
 }
 
 .redFrame {
@@ -19,11 +44,27 @@
   left: 0;
 }
 
+.imgRed {
+  width: 970px;
+
+  @media screen and (max-width: $mobile) {
+    width: 700px;
+  }
+}
+
 .whiteFrame {
   width: 1100px;
   position: absolute;
   left: 0;
   z-index: 1;
+}
+
+.imgWhite {
+  width: 970px;
+
+  @media screen and (max-width: $mobile) {
+    width: 700px;
+  }
 }
 
 .title {
@@ -40,60 +81,180 @@
   font-size: 36px;
   text-transform: uppercase;
   color: $color-white;
+
+  @media screen and (max-width: $mobile) {
+    left: 135px;
+    z-index: 10;
+  }
 }
 
 .baloon {
   position: absolute;
   top: 2160px;
   right: 120px;
+
+  @media screen and (max-width: $laptop) {
+    right: 80px;
+  }
+
+  @media screen and (max-width: $desktop) {
+    top: 2120px;
+    right: 30px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }
 }
 
 .star {
   position: absolute;
   right: 610px;
   top: 2220px;
+
+  @media screen and (max-width: $laptop) {
+    right: 560px;
+  }
+
+  @media screen and (max-width: $desktop) {
+    top: 2190px;
+    right: 480px;
+  }
+
+  @media screen and (max-width: $mobile) {
+  }
 }
 
 .vector1 {
   position: absolute;
   right: 230px;
   top: 2300px;
+
+  @media screen and (max-width: $laptop) {
+    right: 180px;
+  }
+
+  @media screen and (max-width: $desktop) {
+    top: 2260px;
+    right: 120px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }
 }
 
 .vector2 {
   position: absolute;
   left: 600px;
   top: 2220px;
+
+  @media screen and (max-width: $laptop) {
+    left: 560px;
+  }
+
+  @media screen and (max-width: $desktop) {
+    top: 2190px;
+    left: 485px;
+  }
+
+  @media screen and (max-width: $mobile) {
+  }
 }
 
 .vector3 {
   position: absolute;
   left: 460px;
   top: 2100px;
+
+  @media screen and (max-width: $laptop) {
+    left: 430px;
+  }
+
+  @media screen and (max-width: $desktop) {
+    top: 2075px;
+    left: 330px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }
 }
 
 .vector4 {
   position: absolute;
   left: 320px;
   top: 2120px;
+
+  @media screen and (max-width: $laptop) {
+    left: 270px;
+  }
+
+  @media screen and (max-width: $desktop) {
+    top: 2100px;
+    left: 190px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }
 }
 
 .vector5 {
   position: absolute;
   left: 260px;
   top: 2400px;
+
+  @media screen and (max-width: $laptop) {
+    left: 220px;
+  }
+
+  @media screen and (max-width: $desktop) {
+    left: 130px;
+    top: 2360px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }
 }
 
 .vector6 {
   position: absolute;
   left: 180px;
   top: 2300px;
+
+  @media screen and (max-width: $laptop) {
+    left: 150px;
+  }
+
+  @media screen and (max-width: $desktop) {
+    left: 70px;
+    top: 2280px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }
 }
 
 .vector7 {
   position: absolute;
   left: 120px;
   top: 2200px;
+
+  @media screen and (max-width: $laptop) {
+    left: 100px;
+  }
+
+  @media screen and (max-width: $desktop) {
+    left: 30px;
+    top: 2190px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }
 }
 
 .subtitle {
@@ -104,6 +265,11 @@
   font-style: normal;
   font-weight: 500;
   text-transform: uppercase;
+
+  @media screen and (max-width: $mobile) {
+    margin-top: 1555px;
+    font-size: 40px;
+  }
 }
 
 .buttons {
@@ -142,7 +308,7 @@
 
 .buttonPrev {
   bottom: 120px;
-  left: 100px
+  left: 100px;
 }
 
 .buttonNext {
