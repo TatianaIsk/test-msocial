@@ -40,9 +40,15 @@ const Footer = () => (
         <div className={s.icon}>
           <Image src={linkidin} alt='linkidin' />
         </div>
-        <div className={s.icon}><Image src={twitter} alt='twitter' /></div>
-        <div className={s.icon}><Image src={instagram} alt='instagram' /></div>
-        <div className={s.icon}><Image src={pinterest} alt='pinterest' /></div>
+        <div className={s.icon}>
+          <Image src={twitter} alt='twitter' />
+        </div>
+        <div className={s.icon}>
+          <Image src={instagram} alt='instagram' />
+        </div>
+        <div className={s.icon}>
+          <Image src={pinterest} alt='pinterest' />
+        </div>
       </div>
     </div>
   </div>
