@@ -122,6 +122,9 @@
   }
 
   @media screen and (max-width: $mobile) {
+    top: 3440px;
+    width: 30px;
+    left: 360px;
   }
 }
 
@@ -159,6 +162,9 @@
   }
 
   @media screen and (max-width: $mobile) {
+    top: 3910px;
+    width: 25px;
+    left: 380px;
   }
 }
 
@@ -302,16 +308,38 @@
   }
 }
 
+.wrapperSlider {
+  position: relative;
+  padding: 0 60px;
+
+  @media screen and (max-width: $mobile) {
+    padding: 0;
+    position: absolute;
+  }
+}
+
 .slider {
   width: 1100px;
+
+  @media screen and (max-width: $mobile) {
+    width: 780px;
+  }
 }
 
 .buttonPrev {
   bottom: 120px;
   left: 100px;
+
+  @media screen and (max-width: $mobile) {
+    left: 40px;
+  }
 }
 
 .buttonNext {
   bottom: 120px;
   right: 100px;
+
+  @media screen and (max-width: $mobile) {
+    right: 50px;
+  }
 }

@@ -13,5 +13,3 @@ const PrizeWrapperContent = () => (
 );
 
 export default PrizeWrapperContent;
-
-//grid grid-cols-3 mt-[85px] items-baseline

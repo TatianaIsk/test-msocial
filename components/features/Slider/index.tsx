@@ -41,6 +41,11 @@ const Slider: React.FC<SliderProps> = ({ children, classNames }) => {
           bulletActiveClass: s.swiperBulletActive,
         }}
         scrollbar={{ draggable: true }}
+        breakpoints={{
+          768: {
+            slidesPerView: 1,
+          },
+        }}
         onSwiper={swiper => console.log(swiper)}
         onBeforeInit={(swiper: SwiperType) => {
           slideRef.current = swiper;

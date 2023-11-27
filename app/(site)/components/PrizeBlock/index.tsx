@@ -53,7 +53,7 @@ const PrizeBlock = () => (
       <Button className={s.btnOffline}>Оффлайн</Button>
       <Button className={s.btnOnline}>Онлайн</Button>
     </div>
-    <div className='relative px-[60px]'>
+    <div className={s.wrapperSlider}> 
       <Slider classNames={{ slider: s.slider, buttonPrev: s.buttonPrev, buttonNext: s.buttonNext }}>
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
