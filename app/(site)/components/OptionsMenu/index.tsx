@@ -3,8 +3,10 @@ import Options from './Options';
 
 import { options } from './data/options';
 
+import s from './OptionsMenu.module.scss';
+
 const OptionsMenu = () => (
-  <div className='flex flex-row mt-[60px] mb-[60px]'>
+  <div className={s.wrapper}>
     {options.map((option, index) => (
       <>
         <Options key={option.icon} {...option} />
@@ -15,3 +17,5 @@ const OptionsMenu = () => (
 );
 
 export default OptionsMenu;
+
+//flex flex-row mt-[60px] mb-[60px] sm:flex-col

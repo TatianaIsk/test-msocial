@@ -15,7 +15,7 @@ const Footer = () => (
     <div className='flex flex-col'>
       <p className={s.info}>Информационная линия</p>
       <p className={s.number}>8 800 333-15-25</p>
-      <p className={s.caption}>© 2020 ООО «Валио»</p>
+      <p className={s.caption}>© 2020 OOO «Валио»</p>
     </div>
     <div className='flex flex-row'>
       <Link href='/connection' className={s.link}>

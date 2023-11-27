@@ -13,6 +13,13 @@ $color-grey: #ededed;
   src: local('FontDin'), url('./fonts/pfdintextcondpro-medium.woff'), format('woff');
 }
 
+// extensions
+$mobile-l: 480px;
+$mobile: 768px;
+$desktop: 1280px;
+$laptop: 1440px;
+$laptop-l: 1700px;
+
 // mixins
 @mixin background-style {
   background-size: cover;

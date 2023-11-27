@@ -8,6 +8,11 @@
     height: 45px;
     background-image: url('~/assets/icons/cart.svg');
     margin-bottom: 22px;
+
+    @media screen and (max-width: $mobile) {
+      width: 52px;
+      height: 52px;
+    }
   }
 
   &.notebook {
@@ -15,6 +20,11 @@
     height: 45px;
     background-image: url('~/assets/icons/notebook.svg');
     margin-bottom: 22px;
+
+    @media screen and (max-width: $mobile) {
+      width: 77px;
+      height: 52px;
+    }
   }
 
   &.phone {
@@ -22,6 +32,11 @@
     height: 45px;
     background-image: url('~/assets/icons/phone.svg');
     margin-bottom: 22px;
+
+    @media screen and (max-width: $mobile) {
+      width: 37px;
+      height: 55px;
+    }
   }
 
   &.prize {
@@ -29,6 +44,11 @@
     height: 45px;
     background-image: url('~/assets/icons/prize.svg');
     margin-bottom: 22px;
+
+    @media screen and (max-width: $mobile) {
+      width: 49px;
+      height: 52px;
+    }
   }
 
   &.coupon {
@@ -36,6 +56,11 @@
     height: 45px;
     background-image: url('~/assets/icons/coupon.svg');
     margin-bottom: 22px;
+
+    @media screen and (max-width: $mobile) {
+      width: 74px;
+      height: 47px;
+    }
   }
 
   &.arrow {
@@ -45,5 +70,11 @@
     margin-top: 70px;
     margin-left: 20px;
     margin-right: 20px;
+
+    @media screen and (max-width: $mobile) {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      transform: rotate(90deg);
+    }
   }
 }

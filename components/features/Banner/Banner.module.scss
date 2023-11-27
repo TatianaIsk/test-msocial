@@ -3,14 +3,48 @@
 .wrapper {
   background-color: $color-yellow;
   border-radius: 0 0 35% 40%;
-}
 
-.dwarf {
-  position: absolute;
-  top: 120px;
-  left: 300px;
-}
+  .dwarf {
+    position: absolute;
+    top: 120px;
+    left: 300px;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
 
-.image {
-  border-radius: 0 0 10% 50%;
+    @media screen and (max-width: $mobile) {
+      top: 70px;
+      left: 30px;
+      transform: scale(0.6);
+    }
+
+    @media screen and (max-width: $mobile-l) {
+      top: 60px;
+      left: -15px;
+      transform: scale(0.5);
+    }
+  }
+
+  .image {
+    border-radius: 0 0 4% 30%;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+
+    @media screen and (max-width: $laptop-l) {
+      border-radius: 0 0 7% 30%;
+    }
+
+    @media screen and (max-width: $laptop) {
+      border-radius: 0 0 18% 30%;
+    }
+
+    @media screen and (max-width: $mobile) {
+      border-radius: 0 0 35% 30%;
+    }
+
+    @media screen and (max-width: $mobile-l) {
+      border-radius: 0 0 35% 30%;
+    }
+  }
 }

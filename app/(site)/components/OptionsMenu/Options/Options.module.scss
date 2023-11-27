@@ -1,0 +1,12 @@
+@import '@/style/_variables.scss';
+
+.text {
+	text-align: center;
+	width: 160px;
+	font-size: 20px;
+
+	@media screen and (max-width: $mobile) {
+		width: 200px;
+	}
+}
+

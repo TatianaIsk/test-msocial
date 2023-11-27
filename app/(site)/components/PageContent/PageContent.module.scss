@@ -21,6 +21,28 @@
     padding: 10px 40px;
     font-size: 16px;
     text-transform: uppercase;
+
+    @media screen and (max-width: $laptop) {
+      left: 620px;
+    }
+
+    @media screen and (max-width: $desktop) {
+      left: 590px;
+      top: 760px;
+    }
+
+    @media screen and (max-width: $mobile) {
+      left: 300px;
+      top: 540px;
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: $mobile-l) {
+      left: 155px;
+      top: 390px;
+      font-size: 14px;
+      padding: 7px 30px;
+    }
   }
 
   .title {
@@ -30,6 +52,10 @@
     color: $color-red;
     text-shadow: 4px 4px 0 $color-white;
     text-transform: uppercase;
+
+    @media screen and (max-width: $mobile-l) {
+      font-size: 44px;
+    }
   }
 }
 
@@ -74,18 +100,45 @@
   position: absolute;
   top: 845px;
   left: 57px;
+
+  @media screen and (max-width: $mobile) {
+    top: 780px;
+  }
+
+  @media screen and (max-width: $mobile-l) {
+    top: 630px;
+    left: 40px;
+  }
 }
 
 .vectorBrown {
   position: absolute;
   top: 1245px;
   left: 250px;
+
+  @media screen and (max-width: $mobile) {
+    top: 2080px;
+    left: 210px;
+  }
+
+  @media screen and (max-width: $mobile-l) {
+    top: 1960px;
+    left: 100px;
+  }
 }
 
 .vectorWhite {
   position: absolute;
   top: 900px;
   right: 70px;
+
+  @media screen and (max-width: $mobile) {
+    top: 800px;
+  }
+
+  @media screen and (max-width: $mobile-l) {
+    top: 660px;
+  }
 }
 
 .prizeBlock {
@@ -96,7 +149,7 @@
 .text {
   font-size: 18px;
   color: $color-brown;
-	width: 130px;
-	text-align: center;
-	margin-bottom: 40px;
+  width: 130px;
+  text-align: center;
+  margin-bottom: 40px;
 }
