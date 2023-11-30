@@ -1,0 +1,19 @@
+@import '@/style/_variables.scss';
+
+.wrapper {
+	display: flex;
+	flex-direction: row;
+}
+
+.link {
+  font-size: 18px;
+  color: $color-brown;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0 40px 0 40px;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $color-red;
+  }
+}

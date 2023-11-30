@@ -1,3 +1,5 @@
+import { Fragment } from 'react';
+
 import Icon from '@/components/ui/Icon';
 import Options from './Options';
 
@@ -8,10 +10,10 @@ import s from './OptionsMenu.module.scss';
 const OptionsMenu = () => (
   <div className={s.wrapper}>
     {options.map((option, index) => (
-      <>
-        <Options key={option.icon} {...option} />
+      <Fragment key={option.icon}>
+        <Options {...option} />
         {index !== options.length - 1 ? <Icon name='arrow' /> : null}
-      </>
+      </Fragment>
     ))}
   </div>
 );

@@ -7,7 +7,7 @@ import s from './PrizeWrapperContent.module.scss';
 const PrizeWrapperContent = () => (
   <div className={s.wrapper}>
     {optionsPrize.map(option => (
-      <OptionsPrize key={option.image} {...option} />
+      <OptionsPrize key={option.image.src} {...option} />
     ))}
   </div>
 );

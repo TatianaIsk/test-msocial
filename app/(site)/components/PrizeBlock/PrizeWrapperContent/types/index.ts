@@ -1,4 +1,6 @@
+import { StaticImageData } from 'next/image';
+
 export type OptionsPrizeType = {
-  image: string;
+  image: StaticImageData;
   text: string;
 };

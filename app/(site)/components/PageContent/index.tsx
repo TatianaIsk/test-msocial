@@ -36,8 +36,8 @@ const PageContent = () => (
     </div>
     <div className={s.slider}>
       <Slider>
-        {slides.map(slide => (
-          <SwiperSlide key={slide.image}>
+        {slides.map((slide, i) => (
+          <SwiperSlide key={i}>
             <div className='flex flex-col items-center'>
               <Image src={slide.image} alt='image' />
               <p className={s.text}>{slide.text}</p>
