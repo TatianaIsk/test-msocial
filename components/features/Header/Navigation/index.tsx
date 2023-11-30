@@ -5,18 +5,21 @@ import clsx from 'clsx';
 import s from './Navigation.module.scss';
 
 interface NavigationProps {
-  className?: string;
+  classNames?: {
+    wrapper?: string;
+    link?: string;
+  };
 }
 
-const Navigation: React.FC<NavigationProps> = ({ className }) => (
-  <div className={clsx(s.wrapper, className)}>
-    <Link href='/rools' className={s.link}>
+const Navigation: React.FC<NavigationProps> = ({ classNames }) => (
+  <div className={clsx(s.wrapper, classNames?.wrapper)}>
+    <Link href='/rools' className={clsx(s.link, classNames?.link)}>
       Правила
     </Link>
-    <Link href='/prizes' className={s.link}>
+    <Link href='/prizes' className={clsx(s.link, classNames?.link)}>
       Призы
     </Link>
-    <Link href='/winners' className={s.link}>
+    <Link href='/winners' className={clsx(s.link, classNames?.link)}>
       Победители
     </Link>
   </div>
