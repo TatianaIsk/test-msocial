@@ -1,13 +1,18 @@
 'use client';
 
 import { PropsWithChildren, useEffect, useLayoutEffect, useState } from 'react';
+
 import Image from 'next/image';
+
 import clsx from 'clsx';
+
 import s from './Header.module.scss';
+
 import logo from '@/assets/logo.svg';
 import Button from '@/components/ui/Button';
 import BurgerMenu from '../BurgerMenu';
 import Navigation from './Navigation';
+import Modal from '../Modal';
 
 interface HeaderProps extends PropsWithChildren {
   className?: string;
@@ -15,6 +20,7 @@ interface HeaderProps extends PropsWithChildren {
 
 const Header: React.FC<HeaderProps> = ({ className, children }) => {
   const [windowWidth, setWindowWidth] = useState<number>(1000);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   function getWindowWidth() {
     return typeof window !== 'undefined' ? window.innerWidth : 1000;
@@ -22,6 +28,14 @@ const Header: React.FC<HeaderProps> = ({ className, children }) => {
 
   const onResize = () => {
     setWindowWidth(window.innerWidth);
+  };
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
   };
 
   useEffect(() => {
@@ -43,8 +57,12 @@ const Header: React.FC<HeaderProps> = ({ className, children }) => {
           </div>
           <Navigation />
           <div>
-            <Button className={s.button}>вход</Button>
-            <Button className={s.buttonReg}>регистрация</Button>
+            <Button className={s.button} onClick={openModal}>
+              вход
+            </Button>
+            <Button className={s.buttonReg} onClick={openModal}>
+              регистрация
+            </Button>
           </div>
         </>
       ) : (
@@ -55,10 +73,12 @@ const Header: React.FC<HeaderProps> = ({ className, children }) => {
               <Image src={logo} alt='logo' sizes='(max-width: 200px) 100vw' />
             </div>
           </div>
-          <Button className={s.button}>вход</Button>
+          <Button className={s.button} onClick={openModal}>
+            вход
+          </Button>
         </>
       )}
-      {children}
+      {isModalOpen && <Modal onClose={closeModal} />}
     </div>
   );
 };
