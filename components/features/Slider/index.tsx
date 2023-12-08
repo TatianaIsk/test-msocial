@@ -43,8 +43,11 @@ const Slider: React.FC<SliderProps> = ({ children, classNames }) => {
         scrollbar={{ draggable: true }}
         breakpoints={{
           768: {
-            slidesPerView: 1,
+            slidesPerView: 4,
           },
+          480: {
+            slidesPerView: 1,
+          }
         }}
         onSwiper={swiper => console.log(swiper)}
         onBeforeInit={(swiper: SwiperType) => {

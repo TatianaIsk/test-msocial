@@ -25,10 +25,10 @@ const PageContent = () => (
       <Button className={s.button}>загрузить чек</Button>
       <h3 className={s.title}>Нам 40 лет — вам подарки</h3>
       <div className='flex justify-center flex-row sm:flex-col'>
-        <Image src={baloon} alt='baloon' className={s.vertorBaloon} />
-        <Image src={vectorWhite} alt='vectorWhite' className={s.vectorWhite} />
+        <Image src={baloon} alt='' className={s.vertorBaloon} />
+        <Image src={vectorWhite} alt='' className={s.vectorWhite} />
         <OptionsMenu />
-        <Image src={vectorBrown} alt='vectorBrown' className={s.vectorBrown} />
+        <Image src={vectorBrown} alt='' className={s.vectorBrown} />
       </div>
     </div>
     <div className={s.sliderBlock}>

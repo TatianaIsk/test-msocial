@@ -14,7 +14,6 @@ const BurgerIcon: React.FC<BurgerIconProps> = ({ onClick, isOpen, className }) =
 
   return (
     <button className={clsx(s.icon, isOpen && s.open, className)} onClick={handleIconClick} aria-label='Toggle Menu'>
-      <input type='checkbox' name='' id='' />
       <div className={s.hamburgerBars}>
         <span className={s.bar}></span>
         <span className={s.bar}></span>

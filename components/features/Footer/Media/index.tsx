@@ -22,7 +22,7 @@ const Media: React.FC<MediaProps> = ({ classNames }) => {
   return (
     <div className={clsx(s.media, classNames?.media)}>
       <div className={clsx(s.icon, classNames?.icon)}>
-        <Image src={facebook} alt='facebook' />
+        <Image src={facebook} alt='facebook'/>
       </div>
       <div className={clsx(s.icon, classNames?.icon)}>
         <Image src={vk} alt='vk' />
