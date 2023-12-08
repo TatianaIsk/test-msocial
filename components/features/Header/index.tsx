@@ -22,14 +22,6 @@ const Header: React.FC<HeaderProps> = ({ className, children }) => {
   const [windowWidth, setWindowWidth] = useState<number>(1000);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  function getWindowWidth() {
-    return typeof window !== 'undefined' ? window.innerWidth : 1000;
-  }
-
-  const onResize = () => {
-    setWindowWidth(window.innerWidth);
-  };
-
   const openModal = () => {
     setIsModalOpen(true);
   };
@@ -39,12 +31,17 @@ const Header: React.FC<HeaderProps> = ({ className, children }) => {
   };
 
   useEffect(() => {
-    setWindowWidth(getWindowWidth());
+    const mediaQuery = window.matchMedia('(min-width: 769px)');
 
-    window.addEventListener('resize', onResize);
+    const handleMediaQueryChange = (e: MediaQueryListEvent) => {
+      setWindowWidth(e.matches ? window.innerWidth : 0);
+    };
+    setWindowWidth(mediaQuery.matches ? window.innerWidth : 0);
+
+    mediaQuery.addEventListener('change', handleMediaQueryChange);
 
     return () => {
-      window.removeEventListener('resize', onResize);
+      mediaQuery.removeEventListener('change', handleMediaQueryChange);
     };
   }, []);
 

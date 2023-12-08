@@ -1,15 +1,17 @@
+import { PropsWithChildren } from 'react';
+
 import Icon from '@/components/ui/Icon';
 import { OptionType } from '../types';
 
-import s from './Options.module.scss'
+import s from './Options.module.scss';
 
-type OptionProps = OptionType;
+type OptionProps = PropsWithChildren<OptionType>;
 
-const Options: React.FC<OptionProps> = ({ icon, text }) => {
+const Options: React.FC<OptionProps> = ({ icon, children }) => {
   return (
     <div className='flex flex-col items-center w-[220px]'>
       <Icon name={icon} />
-      <p className={s.text}>{text}</p>
+      <p className={s.text}>{children}</p>
     </div>
   );
 };

@@ -22,7 +22,9 @@ const PageContent = () => (
   <div className={s.container}>
     <div className={s.wrapper}>
       <Banner />
-      <Button className={s.button}>загрузить чек</Button>
+      <div className={s.wrapperBtn}>
+        <Button className={s.button}>загрузить чек</Button>
+      </div>
       <h3 className={s.title}>Нам 40 лет — вам подарки</h3>
       <div className='flex justify-center flex-row sm:flex-col'>
         <Image src={baloon} alt='' className={s.vertorBaloon} />
