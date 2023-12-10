@@ -1,0 +1,95 @@
+@import '@/style/_variables.scss';
+
+.wrapper {
+  display: block;
+  background-color: $color-yellow;
+}
+
+.subtitle {
+  text-align: center;
+  color: $color-brown;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  @media screen and (max-width: $mobile) {
+    margin-top: 1555px;
+    font-size: 40px;
+  }
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 15px;
+  color: $color-brown;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+
+  .btnOffline {
+    background-color: $color-yellow-dark;
+    padding: 3px 20px;
+    margin-right: 10px;
+
+    &:hover {
+      background-color: $color-yellow;
+      transition: 1s;
+    }
+  }
+
+  .btnOnline {
+    padding: 3px 20px;
+    margin-left: 10px;
+
+    &:hover {
+      background-color: $color-yellow-dark;
+      transition: 1s;
+    }
+  }
+}
+
+.wrapperSlider {
+  position: relative;
+  padding: 0 60px;
+  margin-bottom: 100px;
+
+  @media screen and (max-width: $mobile) {
+    padding: 0;
+    position: absolute;
+  }
+}
+
+.slider {
+  width: 1100px;
+
+  @media screen and (max-width: $mobile) {
+    width: 780px;
+  }
+}
+
+.buttonPrev {
+  bottom: 120px;
+  left: 60px;
+
+  @media screen and (max-width: $desktop) {
+    left: -10px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    left: 40px;
+  }
+}
+
+.buttonNext {
+  bottom: 120px;
+  right: 60px;
+  
+  @media screen and (max-width: $desktop) {
+    right: -10px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    right: 50px;
+  }
+}

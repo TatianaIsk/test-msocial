@@ -42,7 +42,7 @@ const Slider: React.FC<SliderProps> = ({ children, classNames }) => {
         }}
         scrollbar={{ draggable: true }}
         breakpoints={{
-          768: {
+          770: {
             slidesPerView: 4,
           },
           480: {

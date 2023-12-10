@@ -16,7 +16,7 @@
 
     .button {
       position: absolute;
-      top: calc(100% - 9%);
+      top: calc(100% - 7%);
       left: 50%;
       transform: translate(-50%, -50%);
       background-color: $color-red;
@@ -33,11 +33,11 @@
       }
 
       @media screen and (max-width: $desktop) {
-        top: calc(100% - 11%);
+        top: calc(100% - 17%);
       }
 
       @media screen and (max-width: $mobile) {
-        top: calc(100% - 42%);
+        top: calc(100% - 47%);
         font-size: 14px;
       }
 
@@ -78,6 +78,11 @@
   text-align: center;
   margin-top: 55px;
   margin-bottom: 30px;
+
+  @media screen and (max-width: $mobile) {
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
 }
 
 .slider {
@@ -107,6 +112,10 @@
   top: 845px;
   left: 57px;
 
+  @media screen and (max-width: $desktop) {
+    top: 760px;
+  }
+
   @media screen and (max-width: $mobile) {
     top: 780px;
   }
@@ -122,8 +131,12 @@
   top: 1245px;
   left: 250px;
 
+  @media screen and (max-width: $desktop) {
+    top: 1200px;
+  }
+
   @media screen and (max-width: $mobile) {
-    top: 2080px;
+    top: 1980px;
     left: 210px;
   }
 
@@ -137,6 +150,10 @@
   position: absolute;
   top: 900px;
   right: 70px;
+
+  @media screen and (max-width: $desktop) {
+    top: 840px;
+  }
 
   @media screen and (max-width: $mobile) {
     top: 800px;

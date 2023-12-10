@@ -51,7 +51,6 @@ const PageContent = () => (
     <div className={s.prizeBlock}>
       <PrizeBlock />
     </div>
-    <Footer />
   </div>
 );
 
