@@ -6,5 +6,6 @@
 
 	@media screen and (max-width: $mobile) {
 		flex-direction: column;
+		margin-top: -10px;
 	}
 }

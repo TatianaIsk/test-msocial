@@ -45,7 +45,7 @@ const Slider: React.FC<SliderProps> = ({ children, classNames }) => {
           770: {
             slidesPerView: 4,
           },
-          480: {
+          350: {
             slidesPerView: 1,
           }
         }}

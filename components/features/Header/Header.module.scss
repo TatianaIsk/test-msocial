@@ -1,5 +1,6 @@
 @import '@/style/_variables.scss';
 
+
 .button {
   background-color: $color-yellow;
   margin-left: 20px;
@@ -12,6 +13,11 @@
     background-color: $color-black;
     color: $color-yellow;
     transition: 1s;
+  }
+
+  @media screen and (max-width: $mobile-s) {
+    font-size: 16px;
+    padding: 5px 20px;
   }
 }
 

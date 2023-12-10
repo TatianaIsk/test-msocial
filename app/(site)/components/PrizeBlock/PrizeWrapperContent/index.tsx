@@ -10,7 +10,7 @@ const PrizeWrapperContent = () => (
   <div className={s.wrapper}>
     <OptionsPrize image={card1}>Гарантированный приз — кешбэк на телефон</OptionsPrize>
     <OptionsPrize image={card2}>Еженедельные призы — сертификаты в интернет-магазины на 4 000 ₽</OptionsPrize>
-    <OptionsPrize image={card3}>Главный приз — 400 000 ₽ на новый интерьер</OptionsPrize>
+    <OptionsPrize image={card3}>Главный приз — <span className='text-red-600'>400 000 ₽</span> на новый интерьер</OptionsPrize>
   </div>
 );
 

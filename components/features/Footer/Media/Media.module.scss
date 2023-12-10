@@ -5,12 +5,6 @@
   flex-direction: row;
   margin-top: 11px;
 
-  @media screen and (max-width: $mobile) {
-    position: absolute;
-    top: 5200px;
-    left: 275px;
-  }
-
   .icon {
     display: flex;
     align-content: center;

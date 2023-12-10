@@ -6,11 +6,11 @@ import s from './Footer.module.scss';
 
 const Footer = () => (
   <div className={s.wrapper}>
-    <div className='flex flex-col'>
+    <div className={s.information}>
       <p className={s.info}>Информационная линия</p>
       <p className={s.number}>8 800 333-15-25</p>
-      <p className={s.caption}>© 2020 OOO «Валио»</p>
     </div>
+    <p className={s.caption}>© 2020 OOO «Валио»</p>
     <div className={s.links}>
       <Link href='/connection' className={s.link}>
         Обратная связь
@@ -22,7 +22,7 @@ const Footer = () => (
         FAQ
       </Link>
     </div>
-    <div className='flex flex-col'>
+    <div className={s.media}>
       <p className={s.join}>Присоединяйтесь к нам</p>
       <Media />
     </div>

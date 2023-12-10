@@ -16,8 +16,8 @@
     margin-bottom: 24px;
 
     @media screen and (max-width: $mobile) {
-      margin: 160px 12px 24px 12px;
-      width: 170px;
+      margin: 160px 12px 30px 12px;
+      width: 180px;
     }
   }
 
@@ -29,7 +29,9 @@
     font-style: normal;
 
     @media screen and (max-width: $mobile) {
-      font-size: 36px;
+      font-size: 32px;
+      width: 350px;
+      margin-bottom: 60px;
     }
   }
 }

@@ -18,9 +18,9 @@
     transition: transform 0.3s ease-in-out;
 
     @media screen and (max-width: $mobile) {
-      top: 70px;
-      left: 30px;
-      transform: scale(0.6);
+      top: 120px;
+      left: 180px;
+      transform: scale(0.9);
     }
 
     @media screen and (max-width: $mobile-l) {

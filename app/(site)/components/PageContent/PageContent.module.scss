@@ -94,6 +94,11 @@
   background-color: $color-grey;
   overflow: hidden;
 
+  @media screen and (max-width: $mobile) {
+    border-radius: 0 0 0 0;
+    height: 600px;
+  }
+
   &::before {
     content: '';
     position: absolute;
@@ -104,6 +109,10 @@
     border: 8px solid $color-white;
     top: -15px;
     left: 0;
+    
+    @media screen and (max-width: $mobile) {
+      border-radius: 0 0 0 0;
+    }
   }
 }
 
@@ -167,6 +176,10 @@
 .prizeBlock {
   height: 460px;
   background-color: $color-yellow;
+
+  @media screen and (max-width: $mobile) {
+    height: 1800px;
+  }
 }
 
 .text {

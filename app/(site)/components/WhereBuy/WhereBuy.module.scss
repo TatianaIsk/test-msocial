@@ -14,8 +14,8 @@
   text-transform: uppercase;
 
   @media screen and (max-width: $mobile) {
-    margin-top: 1555px;
     font-size: 40px;
+    margin-top: 60px;
   }
 }
 
@@ -62,6 +62,7 @@
 
 .slider {
   width: 1100px;
+  background-color: $color-yellow;
 
   @media screen and (max-width: $mobile) {
     width: 780px;
@@ -71,6 +72,7 @@
 .buttonPrev {
   bottom: 120px;
   left: 60px;
+  z-index: 5;
 
   @media screen and (max-width: $desktop) {
     left: -10px;
@@ -84,6 +86,7 @@
 .buttonNext {
   bottom: 120px;
   right: 60px;
+  z-index: 5;
   
   @media screen and (max-width: $desktop) {
     right: -10px;
