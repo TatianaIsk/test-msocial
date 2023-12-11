@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 import s from './PrizeBlock.module.scss';
@@ -21,7 +22,21 @@ import vector7 from '@/assets/prize/vectors/vector-7.svg';
 import WhereBuy from '../WhereBuy';
 
 const PrizeBlock = () => {
-  const isMobile = window.matchMedia('(max-width: 768px)').matches;
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkIsMobile = () => {
+      setIsMobile(window.matchMedia('(max-width: 768px)').matches);
+    };
+
+    checkIsMobile();
+
+    window.addEventListener('resize', checkIsMobile);
+
+    return () => {
+      window.removeEventListener('resize', checkIsMobile);
+    };
+  }, []);
 
   return (
     <>

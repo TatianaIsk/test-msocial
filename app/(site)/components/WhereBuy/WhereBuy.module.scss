@@ -17,6 +17,11 @@
     font-size: 40px;
     margin-top: 60px;
   }
+
+  @media screen and (max-width: $mobile-s) {
+    font-size: 30px;
+    margin-top: 60px;
+  }
 }
 
 .buttons {
@@ -27,6 +32,10 @@
   font-style: normal;
   font-weight: 400;
 
+  @media screen and (max-width: $mobile-s) {
+    font-size: 20px;
+  }
+
   .btnOffline {
     background-color: $color-yellow-dark;
     padding: 3px 20px;
@@ -35,6 +44,10 @@
     &:hover {
       background-color: $color-yellow;
       transition: 1s;
+    }
+
+    @media screen and (max-width: $mobile-s) {
+      padding: 3px 27px;
     }
   }
 
@@ -45,6 +58,10 @@
     &:hover {
       background-color: $color-yellow-dark;
       transition: 1s;
+    }
+
+    @media screen and (max-width: $mobile-s) {
+      padding: 3px 27px;
     }
   }
 }
@@ -67,6 +84,10 @@
   @media screen and (max-width: $mobile) {
     width: 780px;
   }
+
+  @media screen and (max-width: $mobile-s) {
+    width: 360px;
+  }
 }
 
 .buttonPrev {
@@ -81,6 +102,10 @@
   @media screen and (max-width: $mobile) {
     left: 40px;
   }
+
+  @media screen and (max-width: $mobile-s) {
+    display: none;
+  }
 }
 
 .buttonNext {
@@ -94,5 +119,9 @@
 
   @media screen and (max-width: $mobile) {
     right: 50px;
+  }
+
+  @media screen and (max-width: $mobile-s) {
+    display: none;
   }
 }

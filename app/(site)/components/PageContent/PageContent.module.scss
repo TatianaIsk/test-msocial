@@ -26,6 +26,7 @@
       padding: 10px 40px;
       font-size: 16px;
       text-transform: uppercase;
+      z-index: 3;
 
       &:hover {
         box-shadow: 0px 10px 20px $color-white;
@@ -41,8 +42,8 @@
         font-size: 14px;
       }
 
-      @media screen and (max-width: $mobile-l) {
-        top: calc(100% - 58%);
+      @media screen and (max-width: $mobile-s) {
+        top: calc(100% - 64%);
         font-size: 14px;
         padding: 7px 30px;
         box-shadow: 0px 1px 5px $color-white;
@@ -61,6 +62,12 @@
 
     @media screen and (max-width: $mobile-l) {
       font-size: 44px;
+    }
+
+    @media screen and (max-width: $mobile-s) {
+      margin-top: 98px;
+      font-size: 34px;
+      margin-bottom: 20px;
     }
   }
 }
@@ -133,6 +140,12 @@
     top: 630px;
     left: 40px;
   }
+
+  @media screen and (max-width: $mobile-s) {
+    top: 550px;
+    left: 27px;
+    scale: 0.8;
+  }
 }
 
 .vectorBrown {
@@ -153,6 +166,12 @@
     top: 1960px;
     left: 100px;
   }
+
+  @media screen and (max-width: $mobile-s) {
+    top: 1830px;
+    left: 54px;
+    scale: 0.8;
+  }
 }
 
 .vectorWhite {
@@ -171,6 +190,11 @@
   @media screen and (max-width: $mobile-l) {
     top: 660px;
   }
+
+  @media screen and (max-width: $mobile-l) {
+    top: 590px;
+    right: 50px;
+  }
 }
 
 .prizeBlock {
@@ -179,6 +203,10 @@
 
   @media screen and (max-width: $mobile) {
     height: 1800px;
+  }
+
+  @media screen and (max-width: $mobile-s) {
+    height: 1500px;
   }
 }
 

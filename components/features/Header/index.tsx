@@ -49,8 +49,8 @@ const Header: React.FC<HeaderProps> = ({ className, children }) => {
     <div className={clsx('w-full relative flex px-[100px] py-[32px] justify-between items-center', className, s.header)}>
       {windowWidth >= 769 ? (
         <>
-          <div className='max-w-[200px]'>
-            <Image src={logo} alt='logo' sizes='(max-width: 200px) 100vw' />
+          <div className={s.logo}>
+            <Image src={logo} alt='logo'/>
           </div>
           <Navigation />
           <div>

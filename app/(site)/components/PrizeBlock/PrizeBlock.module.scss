@@ -10,12 +10,15 @@
     margin-top: -80px;
   }
 
+  @media screen and (max-width: $mobile-s) {
+    margin-top: -60px;
+  }
+
   .wrapper {
     background-color: $color-yellow;
     width: 965px;
     height: 375px;
     z-index: 3;
-
 
     @media screen and (max-width: $desktop) {
       top: 2050px;
@@ -27,6 +30,11 @@
       left: 30px;
       width: 700px;
       height: 1680px;
+    }
+
+    @media screen and (max-width: $mobile-s) {
+      width: 330px;
+      height: 780px;
     }
   }
 
@@ -41,7 +49,12 @@
 
     @media screen and (max-width: $mobile) {
       left: 290px;
-      top: 2580px
+      top: 2580px;
+    }
+
+    @media screen and (max-width: $mobile-s) {
+      top: 2440px;
+      left: 80px;
     }
   }
 
@@ -56,6 +69,10 @@
     @media screen and (max-width: $mobile) {
       width: 700px;
     }
+
+    @media screen and (max-width: $mobile-s) {
+      width: 330px;
+    }
   }
 
   .whiteFrame {
@@ -69,6 +86,10 @@
 
     @media screen and (max-width: $mobile) {
       width: 700px;
+    }
+
+    @media screen and (max-width: $mobile-s) {
+      width: 330px;
     }
   }
 
@@ -90,6 +111,14 @@
     @media screen and (max-width: $mobile) {
       left: 165px;
       z-index: 10;
+    }
+
+    @media screen and (max-width: $mobile-s) {
+      left: 55px;
+      top: 2550px;
+      z-index: 10;
+      width: 258px;
+      height: 54px;
     }
   }
 }
@@ -131,6 +160,13 @@
     width: 30px;
     left: 360px;
   }
+
+  @media screen and (max-width: $mobile-s) {
+    top: 2810px;
+    width: 30px;
+    left: 160px;
+    scale: 0.8;
+  }
 }
 
 .vector1 {
@@ -164,6 +200,13 @@
     top: 3800px;
     width: 25px;
     left: 380px;
+  }
+
+  @media screen and (max-width: $mobile-s) {
+    top: 3090px;
+    width: 25px;
+    left: 180px;
+    scale: 0.8;
   }
 }
 
